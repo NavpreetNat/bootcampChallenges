@@ -4,10 +4,10 @@
 
 Machine learning is a powerful tool that may be leveraged to analyse large sets of data to make accurate predictions. Especially in instances where volumes of data become considerable and the analyses required complex; training, testing and finally deploying machine learning algorithms can vastly expedite the process. In the domain of banking, analysing the creditworthiness of a borrower to make predictions regarding their risk profile using machine learning can achieve great success, and crutial as customer volumes become too large for human workers to keep up.
 
-> Purpose
+### Purpose
 The purpose of this analysis is to the analyse a dataset of potential borrowers which is innately imbalanced, due to the fact that individuals that would be legible for healthy loans will typically outnumber the number of individuals who would otherwise be unworthy, and generate a supervised learning algorithm that is able to predict whether a potential borrower would have a healthy or high risk loan. Imbalances in datasets can create challenges in the form of biases during data processing, and so over or under sampling techniques are required to mitigate the effects of these differing data sizes.
 
-> Available Financial Information
+### Available Financial Information
 The available data on each of the borrowers that was used to analyse, build and predict a supervised learning algorithm included sch metrics as:
 * Loan Size
 * Interest Rate
@@ -18,10 +18,10 @@ The available data on each of the borrowers that was used to analyse, build and 
 * Total Debt
 * Loan Status
 
-> Metric and Variables to be Predicted
+### Metric and Variables to be Predicted
 Out of the above metric, the metric of interest to be predicted was 'loan status'. Specifically, whether or not the potential borrower would have a heathy loan or a high-risk loan. The variables within this analysis were '0' for healthy loan, and '1' for high-risk loan.
 
-> Stages
+### Stages
 
 1. The data, originally a CSV file, was 'read' into Jupyter Lab as a dataframe for analysis using Python.
 
@@ -46,7 +46,7 @@ Out of the above metric, the metric of interest to be predicted was 'loan status
 
 ## Results
 
-**Machine Learning Model 1:**
+#### Machine Learning Model 1
 The original logistic regression model was able to predict the healthy (0) and non-healthy (1) loan labels reasonably well.
 
 *Confusion Matrix:*
@@ -61,7 +61,7 @@ The original logistic regression model was able to predict the healthy (0) and n
 *Recall:*
 * The model's recall was also almost perfect in predicting healthy loans with a recall score of 99% for that category. Recall was otherwise lower when predicting high-risk loans, with 91% of truly positive samples being correctly identified as True Positives.
 
-**Machine Learning Model 2:**
+#### Machine Learning Model 2
 The logistic regression model that was fit with the oversampled data did considerably better than the original model, meaning that resampling the imbalanced data to mitigate the effects of differing sample sizes made a noticable and beneficial effect on the models efficacy in generating reliable predictions.
 
 *Confusion Matrix:*
