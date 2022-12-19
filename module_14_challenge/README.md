@@ -2,6 +2,8 @@
 
 * *The Jupyter Notebook file containing all code may be found in the folder titled ```Code``` under the filename ```machine_learning_trading_bot``` The report is as follows below.*
 
+* *Also please note that the images do not appear to be showing on github. Opening the file in VS Code does however show all images. I have been unable to find the cause of this issue*
+
 ![](images/bot.jpg)
 
 ## Report
